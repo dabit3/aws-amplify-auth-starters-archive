@@ -3,3 +3,9 @@ react/node_modules
 react/.amplifyrc
 react/amplify
 react/src/aws-exports.js
+
+# Vue
+vue/node_modules
+vue/.amplifyrc
+vue/amplify
+vue/src/aws-exports.js
