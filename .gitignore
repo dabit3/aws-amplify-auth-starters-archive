@@ -1,0 +1,5 @@
+# React
+react/node_modules
+react/.amplifyrc
+react/amplify
+react/src/aws-exports.js

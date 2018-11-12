@@ -1,0 +1,35 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "vue-20181109150901-authRole",
+			"UnauthRoleArn": "arn:aws:iam::557458351015:role/vue-20181109150901-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::557458351015:role/vue-20181109150901-authRole",
+			"Region": "eu-central-1",
+			"DeploymentBucketName": "vue-20181109150901-deployment",
+			"UnauthRoleName": "vue-20181109150901-unauthRole",
+			"StackName": "vue-20181109150901",
+			"StackId": "arn:aws:cloudformation:eu-central-1:557458351015:stack/vue-20181109150901/73e09f00-e474-11e8-90ca-50a68ae7142a"
+		}
+	},
+	"auth": {
+		"cognitoauth": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/vue-20181109150901-deployment/amplify-cfn-templates/auth/cognitoauth-cloudformation-template.yml",
+				"logicalId": "authcognitoauth"
+			},
+			"lastPushTimeStamp": "2018-11-09T23:23:08.491Z",
+			"output": {
+				"AppClientSecret": "14duq196fo7345b9uh27i8p7il8uinh948vbs7dp5qmasj1ai05c",
+				"UserPoolId": "eu-central-1_UV1TxG2GG",
+				"AppClientIDWeb": "41ca7s1medtt2h41tpqiom2tet",
+				"AppClientID": "7hu02a463cjji65raqhct5cp30",
+				"IdentityPoolId": "eu-central-1:4e7e3ebd-4992-43b0-a8eb-781fc1294600",
+				"IdentityPoolName": "vueauthstarteridpool",
+				"UserPoolName": "vueauthstarteruserpool"
+			},
+			"lastPushDirHash": "ynHmsAG09xEe+jsX/pHNxW8/Mkg="
+		}
+	}
+}
