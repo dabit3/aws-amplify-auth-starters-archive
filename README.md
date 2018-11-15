@@ -2,11 +2,11 @@
 
 A collection of sample applications that make it easy to quickly get up and running with Authentication in AWS Amplify.
 
-## This project will cover the following frameworks:
+## This project covers the following frameworks:
 
 - [x] React
-- [ ] React Native
-- [ ] Vue
+- [x] React Native
+- [x] Vue
 - [ ] Angular
 
 ## Features implemented in these examples:
