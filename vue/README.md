@@ -1,6 +1,6 @@
 # AWS Amplify Vue Auth Starter
 
-![](vuestarterimage.png)
+![](hero.png)
 
 ## Project setup
 ```

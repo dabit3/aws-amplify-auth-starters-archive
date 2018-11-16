@@ -1,6 +1,6 @@
 # AWS Amplify React Authentication Starter
 
-![](image1.png)
+![](hero.png)
 
 ## This project includes:    
 - User sign up
