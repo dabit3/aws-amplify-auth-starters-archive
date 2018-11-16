@@ -17,7 +17,7 @@ class Authenticator extends React.Component {
   render() {
     const { showSignIn } = this.state
     return (
-      <div>
+      <div style={styles.container}>
         {
           showSignIn ? (
             <SignIn />
@@ -26,14 +26,20 @@ class Authenticator extends React.Component {
           )
         }
         <div {...css(styles.buttonContainer)}>
-          <p
-            {...css(styles.button, showSignIn && styles.underline)}
-            onClick={() => this.switchState(true)}
-          >Sign In</p>
-          <p
+          {
+            showSignIn ? (
+              <p
             onClick={() => this.switchState(false)}
-            {...css(styles.button, !showSignIn && styles.underline)}
-          >Sign Up</p>
+            {...css(styles.toggle)}
+          >Need an account? Sign Up</p>
+            ) : (
+              <p
+            {...css(styles.toggle)}
+            onClick={() => this.switchState(true)}
+          >Already have an account? Sign In</p>
+            )
+          }
+          
         </div>
       </div>
     )
@@ -43,17 +49,20 @@ class Authenticator extends React.Component {
 export default withRouter(Authenticator)
 
 const styles = {
+  container: {
+    marginTop: 50
+  },
   buttonContainer: {
     display: 'flex',
     justifyContent: 'center'
   },
-  button: {
-    width: '100px',
+  toggle: {
     paddingBottom: '10px',
     cursor: 'pointer',
-    borderBottom: '2px solid transparent'
-  },
-  underline: {
-    borderBottomColor: '#ddd'
+    marginTop: 25,
+    borderBottom: '2px solid transparent',
+    ':hover': {
+      opacity: 0.6
+    }
   }
 }

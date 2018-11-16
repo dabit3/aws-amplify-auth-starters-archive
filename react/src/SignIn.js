@@ -89,22 +89,25 @@ const styles = {
   },
   button: {
     padding: '10px 60px',
-    backgroundColor: '#ddd',
+    backgroundColor: '#ffb102',
+    marginTop: 10,
+    marginBottom: 10,
     cursor: 'pointer',
-    borderRadius: '3px',
+    borderRadius: '30px',
     ':hover': {
-      backgroundColor: '#ededed'
+      backgroundColor: '#ffbb22'
     }
   },
   buttonText: {
-    margin: 0
+    margin: 0,
+    color: 'white'
   },
   input: {
     height: 40,
     marginBottom: '10px',
     border: 'none',
     outline: 'none',
-    borderBottom: '2px solid #FF9900',
+    borderBottom: '2px solid #ffb102',
     fontSize: '16px',
     '::placeholder': {
       color: 'rgba(0, 0, 0, .3)'
@@ -122,7 +125,8 @@ const styles = {
     width: 400,
     display: 'flex',
     flexDirection: 'column',
-    boxShadow: "0px 0px 5px rgba(0, 0, 0, .2)"
+    boxShadow: "0px 0px 5px rgba(0, 0, 0, .2)",
+    borderRadius: 20
   }
 }
 
