@@ -10,7 +10,7 @@ A collection of sample applications that make it easy to quickly get up and runn
 ### React Native
 ![](react-native/hero.jpg)
 
-###Vue
+### Vue
 ![](vue/hero.png)
 
 - [ ] Angular
