@@ -55,7 +55,7 @@ export default {
         this.phase = 1
         console.log('user successfully signed up!')
       } catch (err) {
-        console.log('error signing up...')
+        console.log('error signing up...', err)
       }
     },
     async confirmSignUp() {
