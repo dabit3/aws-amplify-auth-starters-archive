@@ -8,7 +8,7 @@ A collection of sample applications that make it easy to quickly get up and runn
 ![](react/hero.png)
 
 - [x] React Native
-![](react-native/hero.png)
+![](react-native/hero.jpg)
 
 - [x] Vue
 ![](vue/hero.png)
