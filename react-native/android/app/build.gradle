@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-gesture-handler')
     compile project(':react-native-vector-icons')
     compile project(':amazon-cognito-identity-js')
     implementation fileTree(dir: "libs", include: ["*.jar"])

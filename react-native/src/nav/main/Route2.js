@@ -2,7 +2,7 @@ import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
 
 class Route2 extends React.Component {
-  static navigationOptions = {
+  static defaultNavigationOptions = {
     title: 'Route 2'
   }
   render() {

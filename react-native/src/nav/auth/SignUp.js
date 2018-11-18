@@ -25,7 +25,7 @@ class SignIn extends Component {
       console.log('successful sign up..')
       this.setState({ stage: 1 })
     } catch (err) {
-      console.log('error signing up...')
+      console.log('error signing up...', err)
     }
   }
   confirmSignUp = async () => {

@@ -12,7 +12,7 @@
     "aws-amplify-react-native": "^2.0.8",
     "react": "16.6.1",
     "react-native": "0.57.5",
-    "react-navigation": "^2.18.2"
+    "react-navigation": "^3.0.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
@@ -25,7 +25,7 @@
   },
   "rnpm": {
     "assets": [
-    "./src/assets/fonts/"
-      ]
+      "./src/assets/fonts/"
+    ]
   }
 }

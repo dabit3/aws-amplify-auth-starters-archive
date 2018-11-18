@@ -13,7 +13,7 @@ A collection of sample applications that make it easy to quickly get up and runn
 ### Vue
 ![](vue/hero.png)
 
-- [ ] Angular
+- [ ] Angular (Coming soon)
 
 ## Features implemented in these examples:
 - User sign up

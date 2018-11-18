@@ -1,5 +1,7 @@
 import React from 'react'
-import { View, Image, StyleSheet, Animated } from 'react-native'
+import { View, StyleSheet, Animated } from 'react-native'
+
+import { withNavigation } from 'react-navigation'
 
 import { Auth } from 'aws-amplify'
 
@@ -8,7 +10,7 @@ class SignIn extends React.Component {
   async componentDidMount() {
     this.animate()
     try {
-      await Auth.currentAuthenticatedUser()
+      const user = await Auth.currentAuthenticatedUser()
       this.props.navigation.navigate('MainNav')
     } catch (err) {
       this.props.navigation.navigate('Auth')
@@ -47,4 +49,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default SignIn
+export default withNavigation(SignIn)

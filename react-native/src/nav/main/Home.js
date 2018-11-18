@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import { Auth } from 'aws-amplify'
 
 class Home extends React.Component {
-  static navigationOptions = {
+  static defaultNavigationOptions = {
     title: 'Home'
   }
   signOut = async () => {
@@ -12,7 +12,7 @@ class Home extends React.Component {
       await Auth.signOut()
       this.props.navigation.navigate('Auth')
     } catch (err) {
-      console.log('error signing out...')
+      console.log('error signing out...', err)
     }
   }
   render() {
