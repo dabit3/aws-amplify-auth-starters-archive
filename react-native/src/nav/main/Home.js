@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import { Auth } from 'aws-amplify'
 
 class Home extends React.Component {
-  static defaultNavigationOptions = {
+  static navigationOptions = {
     title: 'Home'
   }
   signOut = async () => {
